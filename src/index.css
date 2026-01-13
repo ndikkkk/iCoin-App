@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* Menggunakan gray-950 untuk background yang sangat gelap,
+       dan text-gray-200 agar teks tidak putih menyilaukan */
+  @apply bg-gray-950 text-gray-200 antialiased;
+}
+
+/* Custom scrollbar biar lebih pro (opsional, tapi keren) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full hover:bg-gray-600;
+}
+
+/* HILANGKAN SPINNER INPUT NUMBER */
+/* Untuk Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Untuk Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
