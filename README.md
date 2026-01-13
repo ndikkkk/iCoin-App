@@ -37,7 +37,6 @@ Project ini dibangun dengan arsitektur **Serverless** modern:
 * **Data Visualization:** Recharts (Untuk grafik performa)
 * **Icons:** Lucide React & Flaticon
 * **Backend as a Service:** Google Firebase (Auth & Firestore)
-* **Deployment:** Vercel
 
 ---
 
@@ -47,7 +46,7 @@ Ingin mencoba kode ini di komputer Anda? Ikuti langkah berikut:
 
 1.  **Clone Repository**
     ```bash
-    git clone https://github.com/ndikkkk/iCoin-App.git
+    git clone [https://github.com/ndikkkk/iCoin-App.git](https://github.com/ndikkkk/iCoin-App.git)
     cd iCoin-Crypto-Dashboard
     ```
 
@@ -59,7 +58,7 @@ Ingin mencoba kode ini di komputer Anda? Ikuti langkah berikut:
 3.  **Setup Firebase**
     * Buat project baru di [Firebase Console](https://console.firebase.google.com/).
     * Aktifkan **Authentication (Google)** dan **Firestore Database**.
-    * Buat file `src/services/firebase.js` dan masukkan config API Key Anda.
+    * Buat file `.env` di folder root dan masukkan config API Key Anda.
 
 4.  **Jalankan Server**
     ```bash
